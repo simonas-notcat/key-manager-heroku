@@ -1,0 +1,26 @@
+{
+    "name": "Heroku TypeScript CLI Server",
+    "description": "Minnimal deployment of daf-cli server to Heroku",
+    "repository": "https://github.com/uport-project/daf-deployments",
+    "keywords": [
+      "node",
+      "daf",
+      "identity",
+      "verifiable-credentials"
+    ],
+    "addons": ["heroku-postgresql:hobby-dev"],
+    "env": {
+      "API_KEY": {
+        "description": "A secret key for verifying requests",
+        "generator": "secret"
+      },
+      "SECRET_KEY": {
+        "description": "Secret key for database encryption",
+        "generator": "secret"
+      },
+      "AGENT_ENDPOINT": {
+        "description": "Prefix for agent endpoints",
+        "value": "/agent"
+      }
+    }
+  }
