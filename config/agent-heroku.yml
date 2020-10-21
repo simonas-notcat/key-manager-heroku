@@ -9,18 +9,9 @@ server:
   defaultIdentity:
     create: true
     messagingServiceEndpoint: /messaging
-  # ngrok:
-  #   connect: false
-  #   subdomain: none
-  #   region: eu
-  # authtoken:
-  # exposedMethods:
-  #   - resolveDid
-  #   - dataStoreORMGetIdentities
 constants:
   secretKey:
     $env: SECRET_KEY
-  # databaseFile: ./config/database.sqlite
 dbConnection:
   $require: typeorm?t=function#createConnection
   $args:

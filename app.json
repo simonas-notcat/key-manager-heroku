@@ -1,6 +1,6 @@
 {
     "name": "Heroku TypeScript CLI Server",
-    "description": "Minnimal deployment of daf-cli server to Heroku",
+    "description": "Minimal deployment of daf-cli server to Heroku",
     "repository": "https://github.com/uport-project/daf-deployments",
     "keywords": [
       "node",
