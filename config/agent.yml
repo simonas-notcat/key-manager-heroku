@@ -3,16 +3,17 @@ server:
     $env: APP_URL
   port: 5000
   schemaPath: /open-api.json
-  apiBasePath: /agent
+  apiBasePath:
+    $env: AGENT_ENDPOINT
   apiDocsPath: /api-docs
   defaultIdentity:
     create: true
     messagingServiceEndpoint: /messaging
-  ngrok:
-    connect: false
-    subdomain: alice-did
-    region: eu
-    # authtoken:
+  # ngrok:
+  #   connect: false
+  #   subdomain: none
+  #   region: eu
+  # authtoken:
   # exposedMethods:
   #   - resolveDid
   #   - dataStoreORMGetIdentities
