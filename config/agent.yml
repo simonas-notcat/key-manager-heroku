@@ -18,13 +18,13 @@ server:
 constants:
   secretKey:
     $env: SECRET_KEY
-  databaseFile: ./config/database.sqlite
+  # databaseFile: ./config/database.sqlite
 dbConnection:
   $require: typeorm?t=function#createConnection
   $args:
-    - type: sqlite
+    - type: postgres
       database:
-        $ref: /constants/databaseFile
+        $env: DATABASE_URL
       synchronize: true
       logging: false
       entities:
