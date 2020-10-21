@@ -1,5 +1,6 @@
 server:
-  baseUrl: https://jhealy.herokuapp.com
+  baseUrl:
+    $env: APP_URL
   port: 5000
   schemaPath: /open-api.json
   apiBasePath: /agent

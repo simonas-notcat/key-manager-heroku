@@ -10,6 +10,10 @@
     ],
     "addons": ["heroku-postgresql:hobby-dev"],
     "env": {
+      "APP_URL": {
+        "description": "The url for which your DID will be based on",
+        "value": "https://appname.herokuapp.com"
+      },
       "API_KEY": {
         "description": "A secret key for verifying requests",
         "generator": "secret"
