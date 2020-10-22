@@ -1,6 +1,7 @@
 server:
   baseUrl: http://localhost:3332
   port: 3332
+  # apiKey: foobar
   schemaPath: /open-api.json
   apiBasePath: /agent
   apiDocsPath: /api-docs

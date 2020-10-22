@@ -10,6 +10,6 @@
     "dev": "yarn daf server --config=./config/agent-local.yml"
   },
   "dependencies": {
-    "daf-cli": "^7.0.0-beta.44"
+    "daf-cli": "^7.0.0-beta.45"
   }
 }
