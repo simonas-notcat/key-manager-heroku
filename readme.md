@@ -26,11 +26,21 @@ Click to launch your agent on Heroku.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+## Updating deployments
+
+After deploying with the Heroku deploy button you need to link your local repo with heroku. Ensure you have the heroku CLI installed and authenticate.
+
+```bash
+$ heroku login
+$ git remote add APPNAME.heroku https://git.heroku.com/APPNAME.git
+$ git push APPNAME.heroku master
+```
+
 ## Local Deploy
 
 This will create a local instance. Run ngrok or https local server for web:did functionality
 
-```
+```bash
 $ yarn install
 $ yarn dev
 ```
